@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -15,6 +15,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            primary: '#F85559',
           }
         }
       }
@@ -37,8 +38,45 @@
   </style>
 </head>
 
-<body>
-
+<body class="font-lato">
+  <header class="px-5 md:px-20 lg:px-36">
+    <!-- navbar -->
+    <div class="bg-primary rounded-full flex justify-between items-center px-5 py-3 text-white mt-5">
+      <ul class="hidden lg:flex  items-center lg:gap-3">
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">All Fruits</a></li>
+      </ul>
+      <div class="flex items-center gap-3">
+        <img src="images/logo.png" alt="">
+        <h1 class="text-4xl font-bold">Fruit Burst</h1>
+      </div>
+      <div class="relative hidden lg:block">
+        <input type="text" placeholder="Search here" class="pl-5 text-black outline-0 lg:pr-20 rounded-3xl py-3" name=""
+          id="">
+        <i class="fa-solid top-4 right-4 text-black fa-magnifying-glass absolute"></i>
+      </div>
+      <!-- mobile or small device -->
+      <!-- dropdown -->
+      <div class="block md:hidden dropdown dropdown-bottom dropdown-end">
+        <div tabindex="0" role="button" class="btn rounded-full"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow text-black  bg-base-100 rounded-box w-52">
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">All Fruits</a></li>
+        </ul>
+      </div>
+      <!-- medium device -->
+      <ul class="md:flex lg:hidden gap-x-5 hidden items-center lg:gap-3">
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">All Fruits</a></li>
+      </ul>
+    </div>
+  </header>
 </body>
 
 </html>
