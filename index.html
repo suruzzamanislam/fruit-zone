@@ -246,8 +246,37 @@
               <i class="fa-regular fa-star"></i>
               <i class="fa-regular fa-star"></i>
             </div>
-            <p class="text-red-500">Details</p>
+            <button class="text-red-500" onclick="my_modal_1.showModal()">Details</button>
           </div>
+          <!-- modal -->
+          <!-- Open the modal using ID.showModal() method -->
+          <dialog id="my_modal_1" class="modal">
+            <div class="modal-box">
+              <div class="card">
+                <figure class="px-10 pt-10">
+                  <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-extrabold">12.90$ - 18.85$</h2>
+                  <p class="mt-3 text-gray-400">Apples</p>
+                  <div class="text-red-500 mt-3">
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn btn-outline btn-success font-extrabold">Close</button>
+                </form>
+                <button class="btn btn-outline btn-success font-extrabold">Bye Now</button>
+              </div>
+            </div>
+          </dialog>
         </div>
         <div class="card border shadow-xl">
           <figure class="px-10 pt-10">
